@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+  android:orientation="vertical"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+>
+    
+    
+    <TextView  
+     android:paddingTop="25dp"
+    android:id="@+id/data2" 
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    android:text="@string/data2"
+    />
+    
+    
+    
+   
+    <TextView 
+    android:id="@+id/data_display2" 
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+   android:text=""
+    />
+
+    
+    <Button
+    android:id="@+id/btn_back2" 
+    android:layout_width="200dp" 
+    android:layout_height="wrap_content" 
+    android:text="@string/back" 
+    /> 
+    
+    
+    
+    <com.google.ads.AdView android:id="@+id/adView"
+        android:paddingTop="50dp"                          
+        android:layout_width="wrap_content"                         
+        android:layout_height="wrap_content"                         
+        ads:adUnitId="a14f90c090e0a56"                         
+        ads:adSize="BANNER"                                                
+         ads:loadAdOnCreate="true"/>
+    
+    
+    <!--  ads:testDevices="TEST_EMULATOR, TEST_DEVICE_ID"  -->
+    
+   
+    
+</LinearLayout>

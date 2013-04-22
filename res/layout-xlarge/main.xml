@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView 
+android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+    
+    >
+<LinearLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+    
+    
+    
+ <!--   
+ 
+    
+android:padding
+android:paddingBottom
+android:paddingLeft
+android:paddingRight
+android:paddingTop
+    
+    
+    android:inputType = "textCapSentences"
+    android:inputType = "textCapCharacters"
+    android:inputType = "textPhonetic"
+-->  
+    
+    
+    
+    
+<TextView 
+android:id="@+id/TextViewInstructions" 
+android:layout_width="wrap_content"
+android:textSize="28dp"
+android:text="@string/szInstructions"
+android:layout_height="40dp">
+
+</TextView>
+
+<EditText 
+
+android:text="" 
+android:inputType = "text"
+android:id="@+id/EditTextSymbol" 
+android:layout_width="400dip" 
+android:layout_height="100dp"
+android:textSize="28dp"
+>
+</EditText>
+<Button 
+   
+android:text="@string/send" 
+android:id="@+id/Send" 
+android:layout_width="450dp" 
+android:layout_height="100dp"
+android:textSize="20dp"
+>
+</Button>
+
+
+
+
+<TextView 
+    
+
+android:id="@+id/ForSymbol" 
+android:layout_width="wrap_content"
+android:layout_height="40dp"
+android:text=""
+android:textSize="28dp"> 
+</TextView>
+
+<Button 
+android:text="@string/stockdetail" 
+android:id="@+id/StockDetail" 
+android:layout_width="450dp" 
+android:layout_height="100dp"
+android:textSize="20dp"
+>
+</Button>
+
+    
+    
+    <TextView 
+     
+        android:id="@+id/enter_stopamount" 
+    android:layout_width="fill_parent" 
+    android:layout_height="40dp"
+    android:textSize="28dp"
+    android:text="@string/enterstopamount"
+    />
+  <EditText 
+  		android:id="@+id/stopamount" 
+  		android:inputType="numberDecimal"
+  		android:layout_width="400dp"
+  		android:layout_height="100dp" 
+  		android:textSize="28dp"
+  		/>
+  		
+<TextView  
+	android:id="@+id/enter_price"
+    android:layout_width="fill_parent" 
+    android:layout_height="40dp" 
+    android:textSize="28dp"
+    android:text="@string/enterprice"
+    />
+    <EditText 
+  		android:id="@+id/price" 
+  		android:inputType="numberDecimal"
+  		android:layout_width="400dp"
+  		android:layout_height="100dp"
+  		android:textSize="28dp"
+  		/>
+  		
+  		
+  		
+    <TextView 
+    android:id="@+id/enter_stoptarget" 
+    android:layout_width="fill_parent" 
+    android:layout_height="40dp"
+    android:textSize="28dp"
+    android:text="@string/enterstoptarget"
+    />
+  <EditText 
+  		android:id="@+id/stoptarget" 
+  		android:inputType="numberDecimal"
+  		android:layout_width="400dp"
+  		android:layout_height="100dp" 
+  		android:textSize="28dp"
+  		/>
+  		
+  		
+  		
+    <TextView  
+    android:id="@+id/enter_limittarget"
+    android:layout_width="fill_parent" 
+    android:layout_height="40dp" 
+    android:textSize="28dp"
+    android:text="@string/enterlimittarget"
+    />
+    <EditText 
+  		android:id="@+id/limittarget" 
+  		android:inputType="numberDecimal"
+  		android:layout_width="400dp" 
+  		android:layout_height="100dp" 
+  		android:textSize="28dp"
+  		/>
+    <TextView  
+    android:id="@+id/enter_commission"
+    android:layout_width="fill_parent" 
+    android:layout_height="40dp"
+    android:textSize="28dp"
+    android:text="@string/entercommission"
+    />
+    
+    
+    <EditText 
+  		android:id="@+id/commission" 
+  		android:inputType="numberDecimal"
+  		android:layout_width="400dp" 
+  		android:layout_height="100dp"
+  		android:textSize="28dp"
+  		/>
+    
+    
+    
+    <Button   
+    android:id="@+id/btn_calculate" 
+    android:layout_width="450dp" 
+    android:layout_height="100dp"
+    android:text="@string/calculate" 
+    android:textSize="20dp"
+    /> 
+    
+    
+    
+    <com.google.ads.AdView 
+        android:layout_height="wrap_content" 
+        android:layout_width="wrap_content" 
+        android:paddingTop="100dp" 
+        android:id="@+id/adView" 
+        ads:loadAdOnCreate="true" 
+        ads:adSize="BANNER" 
+        ads:adUnitId="a14f90c090e0a56"/>
+    
+    
+    
+    
+    
+</LinearLayout>
+</ScrollView>

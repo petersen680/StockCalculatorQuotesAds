@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  
+    <string name="app_name">Stock Trade Calculator With Quotes</string>
+    <string name="stock_view_page">Stock Detail Page</string>
+    <string name="send">Get Stock Price</string>
+    <string name="stockdetail">Detail Page</string>
+    <string name="results_page">Stock Trade Calculator Results</string>
+    <string name="error_page">Stock Trade Calculator Error</string>
+    <string name="data2">Error:</string>
+    <string name="data">Data Used In Calculations:</string>
+    <string name="back">Re-enter Data</string>
+    <string name="enterprice">Enter Buy Price:</string>
+    <string name="enterstoptarget">Enter Stop Target:</string>
+    <string name="enterstopamount">Enter Dollar Amount To Put At Risk:</string>
+    <string name="enterlimittarget">Enter Limit Target:</string>
+    <string name="entercommission">Enter Commission (one way):</string>
+    <string name="helpmessage">I want this to be great software. Please contact me (Dave) at petersen680@gmail.com with any issues you are having. Enter how much you can afford to lose if you hit your stop on a trade. The number of shares to buy will be calculated as well as the profit if you hit your limit (remember, this can only be an approximation; prices can gap past your stop or limit). This software incorporates code written by Kwok Ho Yin and Jonathan Gonzalez and made available under the Apache 2.0 License.</string>
+	<string name="sharestobuy">Number Of Shares To Buy:</string>
+	<string name="profit">Profit If Limit Is Hit:</string>
+	<string name="capital">Capital Needed For Trade:</string>
+	<string name="calculate">Calculate</string>
+	<string name="risk">Amount of capital at risk:</string>
+	<string name="buyprice">"Buy price is:</string>
+	<string name="stopat">Stop at:</string>
+	<string name="limitat">Limit at:</string>
+	<string name="rtcommision">Round trip commission is:</string>
+	<string name="help">Help</string>
+	<string name="clear">Clear All</string>
+	<string name="message1">Entries cannot be blank</string>
+	<string name="message2">Amount to put at risk must be greater than buy price minus stop price for one share plus commissions</string>
+	<string name="message3">Stop target must be smaller than buy price</string>
+	<string name="message4">Limit target must be greater than buy price</string>
+     <string name="close">Close</string>
+     <string name="helptitle">Help</string>
+     <string name="error">Error</string>
+     <string name="errortext">Either you have entered a bad symbol, Yahoo Finance is unavailable, or there is no internet connection.</string>
+     <string name="error2">Error</string>
+     <string name="errortext2">You must get the price for a symbol before you can get detailed information. You will have to re-enter the symbol to see the detail page a second time.</string>
+     
+     
+     
+     
+     
+
+    <string name="btnAdd">Add</string>
+    <string name="szLastUpdate">Last Update: </string>
+    <string name="Dialog_Delete_Symbol_OK">OK</string>
+    <string name="Dialog_Delete_Symbol_Cancel">Cancel</string>
+    <string name="Dialog_Delete_Symbol_Message">Delete this Symbol?</string>
+    <string name="Dialog_Progress_Title">Please wait...</string>
+    <string name="Dialog_Progress_Message">Try to get data from server.....</string>
+    <string name="Toast_Add_Symbol_Ok">New symbol added successfully</string>
+    <string name="Toast_Add_Symbol_Fail">Cannot get new symbol</string>
+    <string name="preferences_name">Preferences</string>
+    <string name="szMenu_About">About</string>
+    <string name="szInstructions">Insert Stock Symbol (GOOG, AAPL, etc...)</string>
+	<string name="szMenu_Preference">Settings</string>
+	<string name="refreshMenu">Refresh</string>
+	<string name="widget_name">Stock Price Widget</string>
+	<string name="widget_no_data">No data will be displayed</string>
+	<string name="Toast_No_Update_Needed">No update needed</string>
+	<string name="Toast_Stocks_Updated">Data updated successfully</string>
+	<string name="Toast_Already_Exist">Stock already in the list</string>
+	
+	<string name="stock_name">Stock Name</string>
+	<string name="unknown">-</string>
+	<string name="value_label">Value</string>
+	<string name="difference_label">Difference</string>
+	<string name="maximum_value_label">Maximum</string>
+	<string name="minimum_value_label">Minimum</string>
+</resources>
