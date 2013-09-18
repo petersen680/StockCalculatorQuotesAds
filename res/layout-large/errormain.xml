@@ -40,7 +40,7 @@
     
     
     <com.google.ads.AdView android:id="@+id/adView"  
-         android:paddingTop="100dp"                       
+         android:paddingTop="50dp"                       
         android:layout_width="wrap_content"                         
         android:layout_height="wrap_content"                         
         ads:adUnitId="a14f90c090e0a56"                         

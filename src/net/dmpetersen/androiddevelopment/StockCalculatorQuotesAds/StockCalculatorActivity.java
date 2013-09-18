@@ -1,4 +1,4 @@
-package net.dmpetersen.androiddevelopment.StockCalculatorAds;
+package net.dmpetersen.androiddevelopment.StockCalculatorQuotesAds;
 
 import android.app.Activity;
 import android.os.Bundle;
@@ -108,7 +108,7 @@ public class StockCalculatorActivity extends Activity {
     	    	
     	    	message = getString(R.string.message1);
     	    
-    	    	Intent i = new Intent("net.dmpetersen.androiddevelopment.StockCalculatorAds.SCERRORACTIVITYADS");            
+    	    	Intent i = new Intent("net.dmpetersen.androiddevelopment.StockCalculatorQuotesAds.SCERRORACTIVITYQUOTESADS");            
           	     Bundle extras = new Bundle();
           	     extras.putString("message", message);
           	     i.putExtras(extras);
@@ -120,7 +120,7 @@ public class StockCalculatorActivity extends Activity {
     	    			
     	    	message = getString(R.string.message2);
     	    
-    	    	Intent i = new Intent("net.dmpetersen.androiddevelopment.StockCalculatorAds.SCERRORACTIVITYADS");            
+    	    	Intent i = new Intent("net.dmpetersen.androiddevelopment.StockCalculatorQuotesAds.SCERRORACTIVITYQUOTESADS");            
           	     Bundle extras = new Bundle();
           	     extras.putString("message", message);
           	     i.putExtras(extras);
@@ -135,7 +135,7 @@ public class StockCalculatorActivity extends Activity {
     	    	
     	    	message = getString(R.string.message3);
     	    
-    	    	Intent i = new Intent("net.dmpetersen.androiddevelopment.StockCalculatorAds.SCERRORACTIVITYADS");            
+    	    	Intent i = new Intent("net.dmpetersen.androiddevelopment.StockCalculatorQuotesAds.SCERRORACTIVITYQUOTESADS");            
           	     Bundle extras = new Bundle();
           	     extras.putString("message", message);
           	     i.putExtras(extras);
@@ -148,7 +148,7 @@ public class StockCalculatorActivity extends Activity {
     	    	
     	    	message = getString(R.string.message4);
     	    
-    	    	 Intent i = new Intent("net.dmpetersen.androiddevelopment.StockCalculatorAds.SCERRORACTIVITYADS");            
+    	    	 Intent i = new Intent("net.dmpetersen.androiddevelopment.StockCalculatorQuotesAds.SCERRORACTIVITYQUOTESADS");            
            	     Bundle extras = new Bundle();
            	     extras.putString("message", message);
            	     i.putExtras(extras);
@@ -243,9 +243,7 @@ protected void showHelp(){
 
       button.setOnClickListener(new OnClickListener() {
 
-      @Override
-
-          public void onClick(View v) {
+      public void onClick(View v) {
 
               dialog.dismiss();
 
@@ -335,7 +333,7 @@ protected void showHelp(){
        	     String string = new String( getString(R.string.risk) + " " + SAstring.toString() + '\n' + getString(R.string.buyprice) + " " + BPstring.toString() + '\n' + getString(R.string.stopat) + " " + STstring.toString()
        	     +  '\n' + getString(R.string.limitat) + " " + LTstring.toString() + '\n' + getString(R.string.rtcommision) + " " + RTstring.toString());
        	     
-       	     Intent i = new Intent("net.dmpetersen.androiddevelopment.StockCalculatorAds.SCRESULTACTIVITYADS");            
+       	     Intent i = new Intent("net.dmpetersen.androiddevelopment.StockCalculatorQuotesAds.SCRESULTACTIVITYQUOTESADS");            
        	     
        	     Bundle extras = new Bundle();
        	     extras.putString("string", string);

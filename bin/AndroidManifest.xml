@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-      package="net.dmpetersen.androiddevelopment.StockCalculatorAds"
-      android:versionCode="6"
-      android:versionName="1.5"
+      package="net.dmpetersen.androiddevelopment.StockCalculatorQuotesAds"
+      android:versionCode="7"
+      android:versionName="1.6"
       android:targetSdkVersion="13">
       
     <uses-sdk android:minSdkVersion="8" />
@@ -26,7 +26,10 @@
 
 
     <application android:icon="@drawable/dollars" android:label="@string/app_name">
-        <activity android:name=".StockCalculatorActivityAds"
+        
+        
+        
+        <activity android:name=".StockCalculatorActivityQuotesAds"
                   android:label="@string/app_name" android:screenOrientation="portrait">>
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -35,27 +38,21 @@
         </activity>
         
         
-		<activity android:label="@string/results_page" android:name="net.dmpetersen.androiddevelopment.StockCalculatorAds.SCResultActivityAds" android:screenOrientation="portrait">
+		<activity android:label="@string/results_page" android:name=".SCResultActivityQuotesAds" android:screenOrientation="portrait">
 			- <intent-filter> 
-		<action android:name="net.dmpetersen.androiddevelopment.StockCalculatorAds.SCRESULTACTIVITYADS" /> 
+		<action android:name="net.dmpetersen.androiddevelopment.StockCalculatorQuotesAds.SCRESULTACTIVITYQUOTESADS" /> 
 		<category android:name="android.intent.category.DEFAULT" /> 
 		</intent-filter> 
 		</activity> 
 		
-		<activity android:label="@string/error_page" android:name="net.dmpetersen.androiddevelopment.StockCalculatorAds.SCErrorActivityAds" android:screenOrientation="portrait">
+		<activity android:label="@string/error_page" android:name=".SCErrorActivityQuotesAds" android:screenOrientation="portrait">
 			- <intent-filter> 
-		<action android:name="net.dmpetersen.androiddevelopment.StockCalculatorAds.SCERRORACTIVITYADS" /> 
+		<action android:name="net.dmpetersen.androiddevelopment.StockCalculatorQuotesAds.SCERRORACTIVITYQUOTESADS" /> 
 		<category android:name="android.intent.category.DEFAULT" /> 
 		</intent-filter> 
 		</activity> 
 		
-		<activity android:name=".StockViewActivity"
-                  android:label="@string/stock_view_page" android:screenOrientation="portrait">>
-            <intent-filter>
-                <action android:name="net.dmpetersen.androiddevelopment.StockCalculatorAds.StockViewActivity" />
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-        </activity>
+		
 		
 		<activity android:name="com.google.ads.AdActivity"             
 		     android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"/>

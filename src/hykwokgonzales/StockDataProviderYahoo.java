@@ -78,14 +78,7 @@ public class StockDataProviderYahoo {
 	private void addStockData(String[] decodeString) {
 		
 		
-		//begin modification - Petersen
-		stockData.setSymbol("xxx");
- 		stockData.setPrice(0.0);
- 		stockData.setPercentileChange(0.0);
- 		stockData.setMaximum(0.0);
- 		stockData.setMinimum(0.0);
- 		stockData.setName("xxx");
-			//end modification - Petersen
+		
   		
 		
 		try {
@@ -136,6 +129,18 @@ public class StockDataProviderYahoo {
 		  
 		//  if (decodeString[5].toString() == "N/A"){
 		  
+		  
+		//begin modification - Petersen
+			stockData.setSymbol("xxx");
+	 		stockData.setPrice(0.0);
+	 		stockData.setPercentileChange(0.0);
+	 		stockData.setMaximum(0.0);
+	 		stockData.setMinimum(0.0);
+	 		stockData.setName("xxx");
+				//end modification - Petersen
+	 		
+	 		
+		  
 		  		stockDataReturn = stockData;
 		  		exceptionFlag = true;
 		  		
@@ -159,12 +164,7 @@ public class StockDataProviderYahoo {
 		
 
 		
-		stockData.setSymbol("xxx");
-    	stockData.setPrice(0.0);
- 		stockData.setPercentileChange(0.0);
- 		stockData.setMaximum(0.0);
- 		stockData.setMinimum(0.0);
- 		stockData.setName("xxx");
+	
  		
 		boolean result = false;
 		String[] decodeString = null;
@@ -195,6 +195,14 @@ public class StockDataProviderYahoo {
 			//Log.e(TAG, "Cannot start parser for Input stream. Err= " + e.toString());
 			//data.clear();
 			//return result;
+			
+			
+			stockData.setSymbol("xxx");
+	    	stockData.setPrice(0.0);
+	 		stockData.setPercentileChange(0.0);
+	 		stockData.setMaximum(0.0);
+	 		stockData.setMinimum(0.0);
+	 		stockData.setName("xxx");
 			
 			exceptionFlag2 = true;
 			

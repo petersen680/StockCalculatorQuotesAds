@@ -1,4 +1,4 @@
-package net.dmpetersen.androiddevelopment.StockCalculatorAds;
+package net.dmpetersen.androiddevelopment.StockCalculatorQuotesAds;
 
 import android.app.Activity;
 import android.os.Bundle;
