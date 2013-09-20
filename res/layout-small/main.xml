@@ -32,6 +32,15 @@ android:paddingTop
     
     
     
+    <com.google.ads.AdView android:id="@+id/adView"  
+         android:paddingBottom="50dp"                       
+        android:layout_width="wrap_content"                         
+        android:layout_height="wrap_content"                         
+        ads:adUnitId="a14f90c090e0a56"                         
+        ads:adSize="BANNER"                        
+                             
+         ads:loadAdOnCreate="true"/>
+    
     
 <TextView 
     android:paddingTop="25dp"
@@ -156,13 +165,7 @@ android:textSize="20dp">
     /> 
     
     
-    <com.google.ads.AdView android:id="@+id/adView"  
-         android:paddingTop="50dp"                       
-        android:layout_width="wrap_content"                         
-        android:layout_height="wrap_content"                         
-        ads:adUnitId="a14f90c090e0a56"                         
-        ads:adSize="BANNER"                                            
-         ads:loadAdOnCreate="true"/>
+    
     
     
     

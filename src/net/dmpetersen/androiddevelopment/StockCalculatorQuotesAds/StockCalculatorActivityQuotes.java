@@ -83,7 +83,7 @@ public class StockCalculatorActivityQuotes extends StockCalculatorActivity{
             	
         		stockData = provider.getStockData();
         	
-            
+            //still blowing up - here
             stringSymbol = new String(stockData.getSymbol());
             
             stringName = new String(stockData.getName());

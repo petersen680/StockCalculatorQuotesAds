@@ -32,8 +32,8 @@ If all conditions are met, the dialog appears.
 
 
 public class AppRater {
-	    private final static String APP_TITLE = "StockCalulatorQuotesAds";
-	    private final static String APP_PNAME = "net.dmpetersen.androiddevelopment.StockCalculatorQuotesAds";
+	    private final static String APP_TITLE = "Stock Trade Calulator (Quotes)";
+	    //private final static String APP_PNAME = "net.dmpetersen.androiddevelopment.StockCalculatorQuotesAds";
 	    
 	    private final static int DAYS_UNTIL_PROMPT = 30;
 	    private final static int LAUNCHES_UNTIL_PROMPT = 10;
@@ -83,7 +83,7 @@ public class AppRater {
 	        b1.setText("Rate " + APP_TITLE);
 	        b1.setOnClickListener(new OnClickListener() {
 	            public void onClick(View v) {
-	                mContext.startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("market://details?id=" + APP_PNAME)));
+	                mContext.startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("http://apps.opera.com/en_us/stock_trade_calculator_w_quotes_ads.html")));
 	                dialog.dismiss();
 	            }
 	        });        

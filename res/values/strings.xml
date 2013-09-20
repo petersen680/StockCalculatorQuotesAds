@@ -29,7 +29,7 @@
 	<string name="message2">Amount to put at risk must be greater than buy price minus stop price for one share plus commissions</string>
 	<string name="message3">Stop target must be smaller than buy price</string>
 	<string name="message4">Limit target must be greater than buy price</string>
-     <string name="close">Close</string>
+     <string name="close">OK</string>
      <string name="helptitle">Help</string>
      <string name="error">Error</string>
      <string name="errortext">Either you have entered a bad symbol, Yahoo Finance is unavailable, or there is no internet connection.</string>

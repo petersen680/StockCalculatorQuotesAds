@@ -18,6 +18,7 @@ package hykwokgonzales;
 
 import android.content.Context;
 import java.io.BufferedReader;
+import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.net.URL;
@@ -48,9 +49,10 @@ public class StockDataProviderYahoo {
 	
 	private StockData stockDataReturn;  // = new StockData();
 	
-	private boolean exceptionFlag = false;
+	//private boolean exceptionFlag = false;
 	
-	private boolean exceptionFlag2 = false;
+	boolean result = false;
+	
 	//end modification - Petersen
 	
 	
@@ -79,17 +81,38 @@ public class StockDataProviderYahoo {
 		
 		
 		
-  		
+		Log.d(TAG, decodeString[0]);
+	
+		if (decodeString[0].toString().equals("Missing Symbols List.")){
+			
+			
+			
+			stockData.setSymbol("xxx");
+	 		stockData.setPrice(0.0);
+	 		stockData.setPercentileChange(0.0);
+	 		stockData.setMaximum(0.0);
+	 		stockData.setMinimum(0.0);
+	 		stockData.setName("xxx");
+	 		
+	 		
+	 		stockDataReturn = stockData;
+			
+			
+			
+		}
 		
-		try {
+		
+		
+		else{
 			
+		
 			
-			//begin modification - Petersen
-			//if (Double.parseDouble(decodeString[1]) > 0) {
-			//end modification - Petersen
+			//try{
 				
-	  		
-	  		
+		
+			//if (Double.parseDouble(decodeString[1]) > 0) {
+			
+					
 	  		// Symbol
 	  		stockData2.setSymbol(decodeString[0].replace('"', ' ').toUpperCase());
 	  		stockData2.setSymbol(stockData2.getSymbol().trim());
@@ -113,37 +136,39 @@ public class StockDataProviderYahoo {
 	  		Log.d(TAG, "Maximum: " + stockData2.getMaximum());
 	  		Log.d(TAG, "Minimum: " + stockData2.getMinimum());		
 	  		
+	  		//java.lang.NumberFormatException
 	  		
-	 
-	  		
-	  	//begin modification - Petersen
 	  		stockDataReturn = stockData2;
-	  	//end modification - Petersen
+	  		
+			//}catch(Exception e){
+				
+			//	Log.d(TAG, e.toString());	
+				
+				
+				
+				//result = false;
+				
+			//}
+	  		
 			
-	  } catch (Exception e) {
+	  		
+		}	
+			
+			
+			
+	  	
 		  
 		//begin modification - Petersen
+		    
+		  
     	// Just display error and handle next line
     	//Log.e(TAG, "decode error: " + e.toString());
     
 		  
 		//  if (decodeString[5].toString() == "N/A"){
 		  
-		  
-		//begin modification - Petersen
-			stockData.setSymbol("xxx");
-	 		stockData.setPrice(0.0);
-	 		stockData.setPercentileChange(0.0);
-	 		stockData.setMaximum(0.0);
-	 		stockData.setMinimum(0.0);
-	 		stockData.setName("xxx");
-				//end modification - Petersen
-	 		
-	 		
-		  
-		  		stockDataReturn = stockData;
-		  		exceptionFlag = true;
-		  		
+		 	
+	
 		  		
 		 // Log.d(TAG,  decodeString[5].toString()+ "3");
 		 // }
@@ -157,16 +182,19 @@ public class StockDataProviderYahoo {
 		  		
 		//end modification - Petersen
 		  
-    }	
+    	
 	}
+	
+	
+	
+	
+	
 	
 	public boolean startGettingDataFromYahoo(String[] symbols) {
 		
 
 		
-	
- 		
-		boolean result = false;
+		
 		String[] decodeString = null;
 		String szURL = getUrl(symbols);
 		try {
@@ -186,38 +214,24 @@ public class StockDataProviderYahoo {
 			} else {
 				Log.d(TAG, "No connectivity available.");
 				
-				exceptionFlag2 = true;
+				//exceptionFlag = true;
 			}
 		} catch (Exception e) {
 			
 			
 			//begin modification - Petersen
-			//Log.e(TAG, "Cannot start parser for Input stream. Err= " + e.toString());
+			Log.e(TAG, e.toString());
 			//data.clear();
 			//return result;
+					
 			
+			result = false;
 			
-			stockData.setSymbol("xxx");
-	    	stockData.setPrice(0.0);
-	 		stockData.setPercentileChange(0.0);
-	 		stockData.setMaximum(0.0);
-	 		stockData.setMinimum(0.0);
-	 		stockData.setName("xxx");
-			
-			exceptionFlag2 = true;
-			
-			stockDataReturn = stockData;
 			//end modification - Petersen
 	
 		}	
 		
-		//begin modification - Petersen
-		if(exceptionFlag == true || exceptionFlag2 == true){
-			//Log.d(TAG, "flags");
-			//end modification - Petersen
-			
-			result = false;
-		}
+		
 			
 		return result;
 	}
@@ -240,9 +254,10 @@ public class StockDataProviderYahoo {
 		//}	
 		
 	
-		exceptionFlag = false;
+		//exceptionFlag = false;
 		
-		exceptionFlag2 = false;
+		result = false;
+	
 		
 		return stockDataReturn;
 		//end modification - Petersen
